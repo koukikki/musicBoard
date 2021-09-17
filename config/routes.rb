@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'comments/index'
-  root to: "comments#index"
+  get 'rooms/index'
+  root to: "rooms#index"
 end
