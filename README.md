@@ -9,27 +9,27 @@
 
 ### Association
 - has_many :rooms
-- has_many :messages
+- has_many :comments
 
 ## roomsテーブル
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
-| title  | string     | null]: false                   |
-| year   | integer    |                                |
-| month  | integer    |                                |
-| day    | integer    |                                |
-| type   | string     |                                |
+| title  | string     | null: false                   |
+| year   | integer    | null: false                    |
+| month  | integer    | null: false                    |
+| day    | integer    | null: false                    |
+| type   | string     | null: false                    |
 
 ### Association
-- has_many :messages
+- has_many :comments
 - belongs_to :user
 
-## messagesテーブル
+## commentssテーブル
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
-| text   | text       | null: false
+| message | text       | null: false
 | user   | references | null: false, foreign_key: true |
 | room   | references | null: false, foreign_key: true |
 
