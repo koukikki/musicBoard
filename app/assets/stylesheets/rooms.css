@@ -1,0 +1,11 @@
+.main_header {
+  width: 100%;
+  height: 60px;
+  background-color: gray;
+}
+
+.search_bar {
+  width: 100%;
+  height: 55px;
+  background-color: lightskyblue;
+}
