@@ -16,10 +16,8 @@
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
-| title  | string     | null: false                   |
-| year   | integer    | null: false                    |
-| month  | integer    | null: false                    |
-| day    | integer    | null: false                    |
+| title  | string     | null: false                    |
+| date   | string     | null: false                    |
 | artist | string     | null: false                    |
 | user   | references | null: false, foreign_key: true |
 
