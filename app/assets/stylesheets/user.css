@@ -1,0 +1,17 @@
+.inner{
+  text-align: center;
+}
+
+.form__wrapper {
+  display:flex;
+  flex-flow: column;
+  margin-top: 20px
+}
+
+
+
+.field {
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

@@ -1,6 +1,8 @@
 <div class="wrapper">
   <%= render "main_bar" %>
   <%= render "search" %>
-  <div class="user_name">ようこそ〜〜さん</div>
+  <div class="user_name">
+    <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user_name" %>
+  </div>
   <%= render "rooms" %>
 </div>
