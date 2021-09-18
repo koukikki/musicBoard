@@ -4,5 +4,7 @@
   <div class="user_name">
     <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user_name" %>
   </div>
-  <%= render partial: "rooms" %>
+  <% @rooms.each do |room| %>
+    <%= render partial: "rooms", locals: { room: room }%>
+  <% end %>
 </div>
