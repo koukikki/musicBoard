@@ -75,15 +75,17 @@
 }
 
 .post {
-  display: inline-table;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .room_post {
-  float: left;
+  
   background-color: #333333;
   min-width: 25%;
   padding: 3px 10px;
-  margin: 20px 45px;
+  margin: 20px 10px;
 }
 
 .room_post a {
