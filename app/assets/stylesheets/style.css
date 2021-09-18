@@ -33,28 +33,28 @@
 }
 
 .index_bar {
-  width: 200px;
+  min-width: 200px;
   background-color: #333333;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.index_bar a {
+.index_bar p {
   text-decoration: none;
   color: #ffffff;
 }
 
 .search_form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .form-keyword {
   border: none;
   height: 33px;
-  width: 770px;
+  min-width: 870px;
   margin: 0 20px;
 }
 
@@ -89,4 +89,8 @@
 .room_post a {
   display: block;
   color: #ffffff
+}
+
+.show_user {
+  background-color: burlywood;
 }
