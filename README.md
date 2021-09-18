@@ -20,7 +20,7 @@
 | year   | integer    | null: false                    |
 | month  | integer    | null: false                    |
 | day    | integer    | null: false                    |
-| type   | string     | null: false                    |
+| artist | string     | null: false                    |
 | user   | references | null: false, foreign_key: true |
 
 ### Association
