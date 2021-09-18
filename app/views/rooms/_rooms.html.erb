@@ -1,38 +1,16 @@
-<div class="post">
-    <div class="room_post">
-      <a hrref=# class="room">タイトル/~~~~~~~</a>
-      <a hrref=# class="room">アーティスト名/~~~~~~~~~</a>
-      <a hrref=# class="room">リリース日/00年 00月 00日</a>
-      <a hrref=# class="room">投稿者/~~~~~~さん</a>
-    </div>
-    <div class="room_post">
-      <a hrref=# class="room">タイトル/~~~~~~~</a>
-      <a hrref=# class="room">アーティスト名/~~~~~~~~~</a>
-      <a hrref=# class="room">リリース日/00年 00月 00日</a>
-      <a hrref=# class="room">投稿者/~~~~~~さん</a>
-    </div>
-    <div class="room_post">
-      <a hrref=# class="room">タイトル/~~~~~~~</a>
-      <a hrref=# class="room">アーティスト名/~~~~~~~~~</a>
-      <a hrref=# class="room">リリース日/00年 00月 00日</a>
-      <a hrref=# class="room">投稿者/~~~~~~さん</a>
-    </div>
-    <div class="room_post">
-      <a hrref=# class="room">タイトル/~~~~~~~</a>
-      <a hrref=# class="room">アーティスト名/~~~~~~~~~</a>
-      <a hrref=# class="room">リリース日/00年 00月 00日</a>
-      <a hrref=# class="room">投稿者/~~~~~~さん</a>
-    </div>
-    <div class="room_post">
-      <a hrref=# class="room">タイトル/~~~~~~~</a>
-      <a hrref=# class="room">アーティスト名/~~~~~~~~~</a>
-      <a hrref=# class="room">リリース日/00年 00月 00日</a>
-      <a hrref=# class="room">投稿者/~~~~~~さん</a>
-    </div>
-    <div class="room_post">
-      <a hrref=# class="room">タイトル/~~~~~~~</a>
-      <a hrref=# class="room">アーティスト名/~~~~~~~~~</a>
-      <a hrref=# class="room">リリース日/00年 00月 00日</a>
-      <a hrref=# class="room">投稿者/~~~~~~さん</a>
-    </div>
+<div class="room">
+  <div class="post">
+    <p class="room_post">
+      タイトル：<%= link_to room.title, root_path, class: :room_url%>
+    </p>
+    <p class="room_post">
+      アーティスト：<%= room.artist %>
+    </p>
+    <p class="room_post">
+      リリース日：<%= room.date %>
+    </p>
+    <p class="room_post">
+      投稿者：<%= link_to "by #{room.user.name}", root_path, class: :room_url %>
+    </p>
   </div>
+</div>

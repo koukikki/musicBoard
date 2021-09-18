@@ -5,13 +5,18 @@
 .form__wrapper {
   display:flex;
   flex-flow: column;
-  margin-top: 20px
+  margin-top: 20px;
 }
-
-
 
 .field {
   height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.form__btn {
+  border: 1px solid #ffffff;
+  margin-top: 15px;
+  background-color: gray;
+  color: #ffffff;
 }

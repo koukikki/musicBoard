@@ -11,5 +11,7 @@
         <input class="form-submit" type="submit" value="検索">
     </div>
   </div>
-  
+  <% @rooms.each do |room| %>
+    <%= render partial: 'rooms/rooms',locals: { room: room } %>
+  <% end %>
 </div>

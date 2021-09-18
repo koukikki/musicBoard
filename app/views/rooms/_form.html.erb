@@ -1,0 +1,25 @@
+<%= form_with model: room, local: true do |f|%>
+<%# 部分テンプレートを呼び出し、インスタンスを渡して、エラー発生時にメッセージが表示されるようにしています %>
+  <%#<%= render 'error_messages', model: f.object %>
+<%# // 部分テンプレートを呼び出し、インスタンスを渡して、エラー発生時にメッセージが表示されるようにしています %>
+  <div class="inner">
+    <div class="field">
+      <%= f.label :title, "タイトル" %><br />
+      <%= f.text_field :title, id:"prototype_title" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :artist, "アーティスト名" %><br />
+      <%= f.text_field :artist, class: :form__text, id:"prototype_catch_copy" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :date, "リリース日" %><br />
+      <%= f.date_field :date, class: :form__text, id:"prototype_concept" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "保存する", class: :form__btn  %>
+    </div>
+  </div>
+<% end %>
