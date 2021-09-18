@@ -69,6 +69,8 @@
 }
 
 .user_name {
+  text-decoration: none;
+  color: blue;
   padding: 20px;
 }
 

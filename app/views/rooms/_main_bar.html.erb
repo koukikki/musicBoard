@@ -3,7 +3,11 @@
     <a href=#>musicBoard</a>
   </div>
   <div class="main_btn">
-    <a href=#>ログイン</a>
-    <a href=#>新規登録</a>
+    <% if user_signed_in? %>
+    
+    <% else %>
+      <%= link_to "ログイン", new_user_session_path %>
+      <%= link_to "新規登録", new_user_registration_path %>
+    <% end %>
   </div>
 </div>
