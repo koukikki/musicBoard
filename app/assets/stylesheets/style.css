@@ -96,3 +96,15 @@
 .show_user {
   background-color: burlywood;
 }
+
+.new_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  height: 35px;
+}
+
+.new_bar p {
+  color: #ffffff;
+}

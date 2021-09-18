@@ -1,1 +1,8 @@
-<%= render "main_bar" %>
+<%= render partial: "main_bar" %>
+<div class="new_bar">
+    <p>新規投稿</p>
+</div>
+<div class="user_name">
+    <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user_name" %>
+</div>
+<%= render partial: "form", locals: { room: @room } %>
