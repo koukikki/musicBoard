@@ -2,7 +2,7 @@
   <%= render partial: 'rooms/main_bar' %>
   <div class="search_bar">
     <div class="index_bar">
-      <p><%= current_user.name %>さんの投稿一覧</p>
+      <p>マイページ</p>
     </div>
     <div class="search_form">
       <div class="form-input">
@@ -12,6 +12,8 @@
     </div>
   </div>
   <% @rooms.each do |room| %>
-    <%= render partial: 'rooms/rooms',locals: { room: room } %>
+    <% if current_user.id == room.user.id %>
+      <%= render partial: 'rooms/rooms',locals: { room: room } %>
+    <% end %>
   <% end %>
 </div>
