@@ -71,9 +71,13 @@
 }
 
 .user_name {
-  text-decoration: none;
-  color: blue;
   padding: 20px;
+}
+
+.user__name {
+  text-decoration: none;
+  color: #333333;
+  border-bottom: 1px solid #333333;
 }
 
 .room {

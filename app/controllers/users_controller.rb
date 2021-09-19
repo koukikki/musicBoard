@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
 
   def show
-    @user = current_user
+    
     @rooms = Room.all
+    @rooms = Room.includes(:user).order("created_at DESC")
   end
 
 end
