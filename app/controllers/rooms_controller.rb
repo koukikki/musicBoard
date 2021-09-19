@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
   def index
     @rooms = Room.all
-    @rooms = Room.includes(:user).order("created_at DESC")
+    @rooms = Room.includes(:user).order('created_at DESC')
   end
 
   def new
@@ -16,11 +16,10 @@ class RoomsController < ApplicationController
       render :new
     end
   end
-  
+
   private
 
   def room_params
     params.require(:room).permit(:title, :artist, :date).merge(user_id: current_user.id)
   end
-
 end
