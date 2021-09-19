@@ -29,7 +29,7 @@
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
-| message | text       | null: false
+| message | string       | null: false
 | user   | references | null: false, foreign_key: true |
 | room   | references | null: false, foreign_key: true |
 
