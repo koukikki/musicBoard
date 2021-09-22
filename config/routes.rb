@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root to: "rooms#index"
 
   resources :users, only: :show
-  resources :rooms
-  resources :comments
+  resources :rooms do
+    resources :comments
+  end
 end

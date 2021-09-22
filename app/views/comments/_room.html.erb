@@ -4,16 +4,16 @@
   </div>
   <div class="comment_room">
     <p class="comment_post">
-      タイトル：<%#<%= room.title %>
+      タイトル：<%= @room.title %>
     </p>
     <p class="comment_post">
-      アーティスト：<%#<%= @room.artist %>
+      アーティスト：<%= @room.artist %>
     </p>
     <p class="comment_post">
-      リリース日：<%#<%= @room.date %>
+      リリース日：<%= @room.date %>
     </p>
     <p class="comment_post">
-      投稿者：<%#<%= @room.user.name %>
+      投稿者：<%= @room.user.name %>
     </p>
   </div>
   <%= link_to "戻る", root_path, class: :end_btn %>
