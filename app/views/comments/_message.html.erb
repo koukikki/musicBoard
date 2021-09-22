@@ -1,0 +1,20 @@
+<% @comments.each do |comments| %>
+<div class="message">
+  <div class="upper-message">
+    <div class="message-user">
+      <!-- 投稿したユーザー名情報を出力する -->
+      <%= link_to comments.user.name, user_path(current_user.id), class: "user__name" %>
+    </div>
+    <div class="message-date">
+      <!-- 投稿した時刻を出力する -->
+      <%= comments.created_at.strftime('%m月%d日%H:%M:%S')%>
+    </div>
+  </div>
+  <div class="lower-message">
+    <div class="message-content">
+      <!-- 投稿したメッセージ内容を記述する -->
+      <%= comments.message %>
+    </div>
+  </div>
+</div>
+<% end %>

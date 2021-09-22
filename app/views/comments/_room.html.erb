@@ -1,0 +1,20 @@
+<div class="comment_bar">
+  <div class="user_name">
+    <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user__name" %>
+  </div>
+  <div class="comment_room">
+    <p class="comment_post">
+      タイトル：<%= @room.title %>
+    </p>
+    <p class="comment_post">
+      アーティスト：<%= @room.artist %>
+    </p>
+    <p class="comment_post">
+      リリース日：<%= @room.date %>
+    </p>
+    <p class="comment_post">
+      投稿者：<%= @room.user.name %>
+    </p>
+  </div>
+  <%= link_to "戻る", root_path, class: :end_btn %>
+</div>
