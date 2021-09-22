@@ -3,9 +3,11 @@
     <p>コメントを投稿する</p>
   </div>
   <div class="comment_form">
+  <%= form_with model: [@room, @comment], class: 'comment_form', local: true do |f| %>
     <div class="comment-input">
-      <input class="comment-word" placeholder= "Enter a comment">
+      <%= f.text_field :message, placeholder: 'type a comment', class: 'comment-word' %>
     </div>
-      <input class="comment-submit" type="submit" value="送信">
+      <%= f.submit '送信', class: 'comment-submit' %>
   </div>
+  <% end %>
 </div>

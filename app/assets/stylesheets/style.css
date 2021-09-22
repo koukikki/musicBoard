@@ -3,10 +3,10 @@
 }
 
 .wrapper {
-  width: 100%;
+  width: 100vw;
 }
 .main_header {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background-color: gray;
   padding: 0 80px;
@@ -36,7 +36,7 @@
 }
 
 .index_bar {
-  min-width: 20%;
+  width: 20vw;
   background-color: #333333;
   display: flex;
   justify-content: space-around;
@@ -52,13 +52,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 70%;
+  min-width: 70vw;
 }
 
 .form-keyword {
   border: none;
   height: 33px;
-  min-width: 870px;
+  width: 65vw;
   margin: 0 20px;
 }
 
@@ -70,12 +70,12 @@
   height: 35px;
   margin: 0 10px;
   padding: 0 10px;
-  min-width: 10%;
+  min-width: 10vw;
 }
 
 .user_name {
   padding: 20px;
-  min-width: 20%;
+  min-width: 20vw;
 }
 
 .user__name {
@@ -92,7 +92,7 @@
 
 .post {
   background-color: grey;
-  min-width: 30%;
+  min-width: 30vw;
   padding: 3px 10px;
   margin: 10px 25px;
 }
@@ -127,10 +127,11 @@
 
 .comment_bar {
   display: flex;
+  border-bottom: 1px solid #333333
 }
 
 .comment_room {
-  min-width: 70%;
+  min-width: 70vw;
   padding: 5px 5px;
 }
 
@@ -144,7 +145,7 @@
   color: #ffffff;
   text-align: center;
   padding-top: 10px;
-  min-width: 10%;
+  min-width: 10vw;
   font-size: larger;
   height: 50px;
 }
@@ -159,14 +160,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 70%;
+  min-width: 70vw;
 }
 
 .comment-word {
   border: none;
   height: 33px;
-  min-width: 870px;
+  width: 65vw;
   margin: 0 20px;
+  padding: 3px;
 }
 
 .comment-submit {
@@ -178,9 +180,13 @@
   height: 35px;
   margin: 0 10px;
   padding: 0 10px;
-  min-width: 10%;
+  min-width: 10vw;
 }
 
 .comment_body {
   height: calc( 100vh - 200px );
+}
+
+.message {
+  margin: 10px 0 0 0;
 }

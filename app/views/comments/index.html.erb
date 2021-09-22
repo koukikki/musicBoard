@@ -4,7 +4,7 @@
 </div>
 <%= render partial: 'room' %>
 <div class="comment_body">
-<%= render partial: 'message' %>
+<%= render partial: 'message', locals: { comments: @comments} %>
 </div>
 <%= render partial: 'comment' %>
 
