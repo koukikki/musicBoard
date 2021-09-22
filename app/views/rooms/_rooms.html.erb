@@ -1,7 +1,7 @@
 <div class="room">
   <div class="post">
     <p class="room_post">
-      タイトル：<%= link_to room.title, new_comment_path, class: :room_url%>
+      タイトル：<%= link_to room.title, comments_path, class: :room_url %>
     </p>
     <p class="room_post">
       アーティスト：<%= room.artist %>
