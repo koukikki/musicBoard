@@ -127,7 +127,7 @@
 
 .comment_bar {
   display: flex;
-  border-bottom: 1px solid #333333
+  border-bottom: 1px solid #333333;
 }
 
 .comment_room {
@@ -154,6 +154,8 @@
   display: flex;
   height: 50px;
   background-color: lightskyblue;
+  position: fixed;
+  bottom: 0;
 }
 
 .comment_form {
@@ -161,6 +163,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 70vw;
+
 }
 
 .comment-word {
@@ -188,5 +191,19 @@
 }
 
 .message {
-  margin: 10px 0 0 0;
+  margin: 25px 0 15px 20px;
+  background-color:azure
+}
+
+.upper-message {
+  display: flex;
+  padding: 7px 5px 5px 10px;
+}
+
+.message-user {
+  padding-right: 10px;
+}
+
+.message-content {
+  padding: 0 5px 5px 10px;
 }

@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   def index
     @comment = Comment.new
     @room = Room.find(params[:room_id])
-    @comments = @room.comments.includes(:user)
+    @comments = @room.comments.includes(:user).order('created_at DESC')
   end
 
   def create
@@ -11,6 +11,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to room_comments_path(@room)
     else
+      @comments = @room.comments.includes(:user).order('created_at DESC')
       render :index
     end
   end
