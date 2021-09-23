@@ -10,7 +10,7 @@
       リリース日：<%= room.date %>
     </p>
     <p class="room_post">
-      投稿者：<%= room.user.name %>
+      投稿者：<%= link_to room.user.name, user_path(room.user.id), class: :room_user %>
     </p>
   </div>
 </div>
