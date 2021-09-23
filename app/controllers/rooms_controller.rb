@@ -19,6 +19,7 @@ class RoomsController < ApplicationController
 
   def search
     @rooms = Room.search(params[:keyword])
+    @keyword = params[:keyword]
   end
 
   private
