@@ -1,5 +1,5 @@
 class RoomsController < ApplicationController
-before_action :set_room, only: [:edit, :update]
+before_action :set_room, only: [:edit, :update, :destroy]
 
   def index
     @rooms = Room.all
@@ -33,6 +33,12 @@ before_action :set_room, only: [:edit, :update]
     else
       render :edit
     end
+  end
+
+  def destroy
+    redirect_root
+    @room.destroy
+    redirect_to root_path
   end
 
   def search
