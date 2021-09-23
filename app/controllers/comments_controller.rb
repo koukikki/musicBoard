@@ -16,7 +16,8 @@ class CommentsController < ApplicationController
     end
   end
 
-  private 
+  private
+
   def comment_params
     params.require(:comment).permit(:message).merge(user_id: current_user.id, room_id: params[:room_id])
   end
