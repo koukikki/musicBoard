@@ -10,7 +10,7 @@
         <%#<%= render partial: "prototypes/error_messages", locals:{model: @user} %>
         <div class="field">
           <%= f.label :name, "ユーザー名" %><br />
-          <%= f.text_field :name, id:"user_name" %>
+          <%= f.text_field :name, autofocus: true, maxlength: "10", id:"user_name" %>
         </div>
 
         <div class="field">
