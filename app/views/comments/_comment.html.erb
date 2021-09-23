@@ -5,9 +5,9 @@
   <div class="comment_form">
   <%= form_with model: [@room, @comment], class: 'comment_form', local: true do |f| %>
     <div class="comment-input">
-      <%= f.text_field :message, placeholder: 'type a comment', class: 'comment-word' %>
+      <%= f.text_field :message, placeholder: 'type a comment', class: 'comment-word', id: 'message_form' %>
     </div>
-      <%= f.submit '送信', class: 'comment-submit' %>
+      <%= f.submit '送信', class: 'comment-submit', id: 'btn' %>
   <% end %>
   </div>
 </div>

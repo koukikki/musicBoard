@@ -9,7 +9,8 @@ class CommentsController < ApplicationController
     @room = Room.find(params[:room_id])
     @comment = @room.comments.new(comment_params)
     if @comment.save
-      redirect_to room_comments_path(@room)
+      ActionCable.server.broadcast 'message_channel', 
+      content: @comment, name: @comment.user.name, time: @comment.created_at.strftime('%m月%d日%H:%M:%S'), id: @room.id
     else
       @comments = @room.comments.includes(:user).order('created_at DESC')
       render :index

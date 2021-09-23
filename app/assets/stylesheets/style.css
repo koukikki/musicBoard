@@ -190,9 +190,9 @@
   height: calc( 100vh - 200px );
 }
 
-.message {
+.message-display {
   margin: 25px 0 15px 20px;
-  background-color:azure
+  background-color:azure;
 }
 
 .upper-message {
@@ -204,6 +204,6 @@
   padding-right: 10px;
 }
 
-.message-content {
+.lower-message {
   padding: 0 5px 5px 10px;
 }
