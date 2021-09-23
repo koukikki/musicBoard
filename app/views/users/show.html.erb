@@ -3,7 +3,7 @@
   <div class="show_bar">
     <p><%= @name + "さんの投稿一覧" %></p>
   </div>
-  <% @room.each do |room| %>
+  <% @rooms.each do |room| %>
       <%= render partial: 'rooms/rooms',locals: { room: room } %>
   <% end %>
 </div>
