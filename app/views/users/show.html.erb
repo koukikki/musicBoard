@@ -1,10 +1,7 @@
 <div class="show_user">
   <%= render partial: 'rooms/main_bar' %>
     <div class="show_bar">
-      <p>マイページ</p>
-  </div>
-  <div class="user_name">
-    <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user__name" %>
+      <p><%= current_user.name + "さんの投稿一覧" %></p>
   </div>
   <% @rooms.each do |room| %>
     <% if current_user.id == room.user.id %>
