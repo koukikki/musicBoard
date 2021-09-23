@@ -17,6 +17,11 @@ class RoomsController < ApplicationController
     end
   end
 
+  def edit
+    @room = Room.find(params[:id])
+    @rooms = Room.includes(:user).order('created_at DESC')
+  end
+
   def search
     @rooms = Room.search(params[:keyword])
     @keyword = params[:keyword]

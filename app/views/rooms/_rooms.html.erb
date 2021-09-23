@@ -1,11 +1,18 @@
 <div class="room">
   <div class="post">
+  <div>
     <p class="room_post">
       タイトル：<%= link_to room.title, room_comments_path(room), class: :room_url %>
     </p>
     <p class="room_post">
       アーティスト：<%= room.artist %>
     </p>
+  </div>
+  <% if current_user.id == room.user.id %>
+  <div class="edit_menu">
+    <%= link_to "編集", edit_room_path(room.id), class: :room__btn %>
+  </div>
+  <% end %>
     <p class="room_post">
       リリース日：<%= room.date %>
     </p>
