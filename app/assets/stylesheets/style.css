@@ -125,10 +125,9 @@
 .room_post {
   display: block;
   color: #ffffff;
-
 }
 
-.room_url {
+.room_url, .room_user {
   border-bottom: 1px solid #ffffff;
   text-decoration: none;
   color: #ffffff;
