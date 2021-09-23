@@ -239,3 +239,15 @@
 .message-content {
   padding: 0 5px 5px 10px;
 }
+
+.edit_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room__btn {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 3px;
+}
