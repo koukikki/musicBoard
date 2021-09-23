@@ -39,12 +39,25 @@
   background-color: lightskyblue;
 }
 
-.index_bar {
+.show_bar {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #333333;
   height: 35px;
+}
+
+.show_bar p {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.index_bar {
+  min-width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
 }
 
 .index_bar p {
