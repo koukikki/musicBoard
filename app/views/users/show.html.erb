@@ -1,15 +1,7 @@
 <div class="show_user">
   <%= render partial: 'rooms/main_bar' %>
-  <div class="search_bar">
     <div class="index_bar">
       <p>マイページ</p>
-    </div>
-    <div class="search_form">
-      <div class="form-input">
-        <input class="form-keyword" placeholder= "Please enter a keyword">
-      </div>
-        <input class="form-submit" type="submit" value="検索">
-    </div>
   </div>
   <% @rooms.each do |room| %>
     <% if current_user.id == room.user.id %>

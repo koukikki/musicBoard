@@ -7,4 +7,12 @@ class Room < ApplicationRecord
     validates :artist
     validates :date
   end
+
+  def self.search(search)
+    if search != ""
+      Room.where('title LIKE(?)', "%#{search}%")
+    else
+      Room.all
+    end
+  end
 end
