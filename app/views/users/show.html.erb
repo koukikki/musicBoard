@@ -1,11 +1,9 @@
 <div class="show_user">
   <%= render partial: 'rooms/main_bar' %>
-    <div class="index_bar">
-      <p>マイページ</p>
+  <div class="show_bar">
+    <p><%= @name + "さんの投稿一覧" %></p>
   </div>
   <% @rooms.each do |room| %>
-    <% if current_user.id == room.user.id %>
       <%= render partial: 'rooms/rooms',locals: { room: room } %>
-    <% end %>
   <% end %>
 </div>
