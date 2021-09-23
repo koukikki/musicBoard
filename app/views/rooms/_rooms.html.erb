@@ -5,12 +5,17 @@
         タイトル：<%= link_to room.title, room_comments_path(room), class: :room_url %>
       </div>
       <% if current_user.id == room.user.id %>
-        <div><%= link_to "編集", edit_room_path(room.id), class: :room__btn %></div>
+        <div class="edit_btn"><%= link_to "編集", edit_room_path(room.id), class: :room__btn %></div>
       <% end %>
     </div>
+    <div class="edit_bar">
       <p class="room_post">
         アーティスト：<%= room.artist %>
       </p>
+      <% if current_user.id == room.user.id %>
+        <div><%= link_to "削除", edit_room_path(room.id), class: :room__btn %></div>
+      <% end %>
+    </div>
       <p class="room_post">
         リリース日：<%= room.date %>
       </p>

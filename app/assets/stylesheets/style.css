@@ -243,6 +243,7 @@
 .edit_bar {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2px;
 }
 
 .room__btn {
