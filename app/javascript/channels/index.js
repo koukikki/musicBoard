@@ -1,9 +1,9 @@
 function pullDown() {
-  const pullDownButton = document.getElementById("lists")
-  const pullDownParents = document.getElementById("pull-down")
-  const pullDownChild = document.querySelectorAll(".pull-down-list")
+  const pullDownButton = document.getElementsByClassName("edit_btn")
+  const pullDownParents = document.getElementsByClassName("show-lists")
+  const pullDownChild = document.getElementsByClassName("pull-down-list")
   
-  pullDownButton.addEventListener('mouseover', function(){
+    pullDownButton.addEventListener('mouseover', function(){
     pullDownButton.setAttribute("style", "opacity: 0.6;")
   })
 
