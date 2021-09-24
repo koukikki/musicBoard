@@ -128,7 +128,7 @@ body {
 
 .post {
   background-color: grey;
-  min-width: 30vw;
+  min-width: 25vw;
   padding: 3px 10px;
   margin: 10px 25px;
 }
@@ -234,7 +234,7 @@ body {
 }
 
 .message {
-  margin: 25px 0 15px 20px;
+  margin: 25px 20px 15px 20px;
   background-color:azure
 }
 
@@ -257,9 +257,22 @@ body {
   margin-bottom: 2px;
 }
 
+.edit_btn {
+  color: #ffffff;
+}
+
 .room__btn {
   text-decoration: none;
   color: #ffffff;
   border: 1px solid #ffffff;
   padding: 3px;
+  margin-bottom: 5px;
+}
+
+.hidden{
+  display: none;
+}
+
+li {
+  display: inline;
 }
