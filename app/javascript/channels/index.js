@@ -21,12 +21,6 @@ function pullDown() {
     }
   })
 
-  pullDownParents.forEach(function(lists) {
-    lists.addEventListener('click', function() {
-
-    })
-  })
-
   pullDownChild.forEach(function(list) {
     list.addEventListener('click', function() {
 
