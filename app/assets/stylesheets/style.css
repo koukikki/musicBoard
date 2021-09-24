@@ -74,6 +74,7 @@ body {
   min-width: 27vw;
   padding: 3px 10px;
   margin: 10px 25px;
+  opacity: 0.9;
 }
 
 .room_post {
