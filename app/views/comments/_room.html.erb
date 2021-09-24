@@ -3,12 +3,22 @@
     <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user__name" %>
   </div>
   <div class="comment_room">
-    <p class="comment_post">
-      タイトル：<%= @room.title %>
-    </p>
-    <p class="comment_post">
-      アーティスト：<%= @room.artist %>
-    </p>
+    <div class="edit_bar">
+      <p class="comment_post">
+        タイトル：<%= @room.title %>
+      </p>
+      <% if current_user.id == @room.user.id %>
+        <div class="edit_btn"><%= link_to "編集", edit_room_path(@room.id), class: :room__btn %></div>
+      <% end %>
+    </div>
+    <div class="edit_bar">
+      <p class="comment_post">
+        アーティスト：<%= @room.artist %>
+      </p>
+      <% if current_user.id == @room.user.id %>
+        <div><%= link_to "削除", room_path(@room.id), method: :delete, class: :room__btn %></div>
+      <% end %>
+    </div>
     <p class="comment_post">
       リリース日：<%= @room.date %>
     </p>
