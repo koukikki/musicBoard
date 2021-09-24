@@ -265,3 +265,14 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
+/* guide */
+.guide {
+  background-color: #ffffff;
+  opacity: 0.4;
+  padding: 3px 5px 3px 15px;
+}
+
+.hidden{
+  display: none;
+}
