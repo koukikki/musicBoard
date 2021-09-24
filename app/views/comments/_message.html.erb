@@ -5,7 +5,7 @@
   <div class="upper-message">
     <div class="message-user" >
       <!-- 投稿したユーザー名情報を出力する -->
-      <%= comments.user.name %>
+      <%= link_to comments.user.name, user_path(comments.user.id), class: "user__name" %>
     </div>
     <div class="message-date">
       <!-- 投稿した時刻を出力する -->

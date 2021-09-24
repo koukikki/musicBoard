@@ -1,0 +1,9 @@
+<div class="wrapper">
+<div class="new_bar">
+    <p>投稿編集ページ</p>
+</div>
+<div class="user_name">
+    <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user__name" %>
+</div>
+<%= render partial: "form", locals: { room: @room } %>
+</div>

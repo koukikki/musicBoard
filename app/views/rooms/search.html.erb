@@ -1,0 +1,11 @@
+<div class="wrapper">
+<%= render partial: "search" %>
+<div class="user_name">
+    <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user__name" %>
+</div>
+<div class="contents row">
+  <% @rooms.each do |room| %>
+    <%= render partial: "rooms", locals: { room: room } %>
+  <% end %>
+</div>
+</div>

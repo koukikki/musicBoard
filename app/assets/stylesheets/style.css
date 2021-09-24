@@ -2,9 +2,20 @@
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 100vw;
+html {
+  height: 100%;
 }
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100%;
+  background-image: url(record.png);
+}
+
 .main_header {
   width: 100vw;
   height: 60px;
@@ -29,18 +40,35 @@
   margin: 0 10px;
 }
 
+.main_btn a:hover {
+  opacity: 0.7;
+}
+
 .search_bar {
   display: flex;
   height: 50px;
   background-color: lightskyblue;
 }
 
-.index_bar {
-  width: 20vw;
-  background-color: #333333;
+.show_bar {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  height: 35px;
+}
+
+.show_bar p {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.index_bar {
+  min-width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
 }
 
 .index_bar p {
@@ -73,6 +101,10 @@
   min-width: 10vw;
 }
 
+.form-submit:hover {
+  opacity: 0.7;
+}
+
 .user_name {
   padding: 20px;
   min-width: 20vw;
@@ -82,6 +114,10 @@
   text-decoration: none;
   color: #333333;
   border-bottom: 1px solid #333333;
+}
+
+.user__name:hover {
+  opacity: 0.7;
 }
 
 .room {
@@ -100,10 +136,9 @@
 .room_post {
   display: block;
   color: #ffffff;
-
 }
 
-.room_url {
+.room_url, .room_user {
   border-bottom: 1px solid #ffffff;
   text-decoration: none;
   color: #ffffff;
@@ -150,6 +185,10 @@
   height: 50px;
 }
 
+.end_btn:hover {
+  opacity: 0.7;
+}
+
 .comment__bar {
   display: flex;
   height: 50px;
@@ -162,7 +201,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 70vw;
+  min-width: 80vw;
 
 }
 
@@ -186,6 +225,10 @@
   min-width: 10vw;
 }
 
+.comment-submit:hover {
+  opacity: 0.7;
+}
+
 .comment_body {
   height: calc( 100vh - 200px );
 }
@@ -206,4 +249,17 @@
 
 .lower-message {
   padding: 0 5px 5px 10px;
+}
+
+.edit_bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.room__btn {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 3px;
 }

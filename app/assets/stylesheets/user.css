@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.page-heading {
+  font-size: 25px;
+}
+
 .form__wrapper {
   display:flex;
   flex-flow: column;
@@ -21,3 +25,8 @@
   background-color: gray;
   color: #ffffff;
 }
+
+.form__btn:hover {
+  opacity: 0.7;
+}
+
