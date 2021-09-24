@@ -8,6 +8,14 @@ window.addEventListener('load', function(){
 
   const guideButton = document.getElementById("guide")
   const text = document.getElementById("text")
+
+  guideButton.addEventListener('mouseover', function(){
+    guideButton.setAttribute("style", "opacity: 0.6;")
+  })
+
+  guideButton.addEventListener('mouseout', function(){
+    guideButton.removeAttribute("style", "opacity: 1.0;")
+  })
   
   guideButton.addEventListener('click', function() {
     if (text.getAttribute("style") == "display:block;") {
