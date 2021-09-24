@@ -1,5 +1,8 @@
 <div class="wrapper">
   <%= render partial: "search" %>
+  <div class="guide">
+    <%= render partial: "guide" %>
+  </div>
   <div class="user_name">
     <%= link_to "ようこそ" + current_user.name + "さん", user_path(current_user.id), class: "user__name" %>
   </div>
@@ -8,4 +11,3 @@
     <%= render partial: "rooms", locals: { room: room }%>
   <% end %>
 </div>
-</main>

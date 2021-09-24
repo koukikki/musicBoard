@@ -136,13 +136,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 80vw;
 }
 
 .form-keyword {
   border: none;
   height: 33px;
-  width: 65vw;
+  width: 60vw;
   margin: 0 20px;
 }
 
@@ -194,6 +193,7 @@ body {
 .comment__bar {
   display: flex;
   height: 50px;
+  width: 100vw;
   background-color: lightskyblue;
   position: fixed;
   bottom: 0;
@@ -208,7 +208,7 @@ body {
 .comment-word {
   border: none;
   height: 33px;
-  width: 65vw;
+  min-width: 65vw;
   margin: 0 20px;
   padding: 3px;
 }
@@ -235,7 +235,8 @@ body {
 
 .message-display {
   margin: 25px 20px 15px 20px;
-  background-color:azure;
+  background-color: #ffffff;
+  opacity: 0.7;
 }
 
 .upper-message {
@@ -263,4 +264,15 @@ body {
 .show_bar p {
   text-decoration: none;
   color: #ffffff;
+}
+
+/* guide */
+.guide {
+  background-color: #ffffff;
+  opacity: 0.4;
+  padding: 3px 5px 3px 15px;
+}
+
+.hidden{
+  display: none;
 }
