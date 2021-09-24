@@ -45,55 +45,6 @@ body {
   opacity: 0.7;
 }
 
-/* 検索機能 */
-.search_bar {
-  display: flex;
-  height: 50px;
-  background-color: lightskyblue;
-}
-
-.index_bar {
-  min-width: 20vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #333333;
-}
-
-.index_bar p {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.search_form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 70vw;
-}
-
-.form-keyword {
-  border: none;
-  height: 33px;
-  width: 65vw;
-  margin: 0 20px;
-}
-
-.form-submit {
-  background-color: #38AEF0;
-  border: none;
-  color: white;
-  font-size: 16px;
-  height: 35px;
-  margin: 0 10px;
-  padding: 0 10px;
-  min-width: 10vw;
-}
-
-.form-submit:hover {
-  opacity: 0.7;
-}
-
 /* ユーザー情報まわり */
 .user_name {
   padding: 20px;
@@ -160,6 +111,56 @@ body {
   border: 1px solid #ffffff;
   padding: 3px;
 }
+
+/* 検索機能 */
+.search_bar {
+  display: flex;
+  height: 50px;
+  background-color: lightskyblue;
+}
+
+.index_bar {
+  min-width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+}
+
+.index_bar p {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.search_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 80vw;
+}
+
+.form-keyword {
+  border: none;
+  height: 33px;
+  width: 65vw;
+  margin: 0 20px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 35px;
+  margin: 0 10px;
+  padding: 0 10px;
+  min-width: 10vw;
+}
+
+.form-submit:hover {
+  opacity: 0.7;
+}
+
 /* コメント機能 */
 .comment_bar {
   display: flex;
@@ -202,8 +203,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 80vw;
-
 }
 
 .comment-word {
