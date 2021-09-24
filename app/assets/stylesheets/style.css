@@ -136,13 +136,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 80vw;
 }
 
 .form-keyword {
   border: none;
   height: 33px;
-  width: 65vw;
+  width: 60vw;
   margin: 0 20px;
 }
 
@@ -195,20 +194,19 @@ body {
   display: flex;
   height: 50px;
   background-color: lightskyblue;
-  position: fixed;
-  bottom: 0;
 }
 
 .comment_form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 90%;
 }
 
 .comment-word {
   border: none;
   height: 33px;
-  width: 65vw;
+  width: 80vw;
   margin: 0 20px;
   padding: 3px;
 }
