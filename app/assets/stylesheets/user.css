@@ -33,3 +33,20 @@ body {background-color: #4d4949;}
   opacity: 0.7;
 }
 
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .field {
+    height: 20px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .field {
+    height: 20px;
+    margin-top: 16%;
+    margin-bottom: 16%;
+  }
+}
