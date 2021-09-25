@@ -6,6 +6,7 @@
         <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。%>
         <%# 「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
         <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+        <%= render partial: "rooms/error_messages", locals:{model: @user} %>
         <%#<%= render partial: "prototypes/error_messages", locals:{model: @user} %>
         <div class="field">
           <%= f.label :name, "ユーザー名(10文字以内)" %><br />
