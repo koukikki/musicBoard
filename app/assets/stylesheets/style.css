@@ -171,6 +171,7 @@ body {
 .comment_bar {
   display: flex;
   border-bottom: 1px solid #333333;
+  z-index: 4;
 }
 
 .comment_room {
@@ -204,6 +205,7 @@ body {
   background-color: rgb(247, 174, 126);
   position: fixed;
   bottom: 0;
+  z-index: 6;
 }
 
 .comment_form {
@@ -237,7 +239,8 @@ body {
 }
 
 .comment_body {
-  height: calc( 100vh - 200px );
+  background-color: gray;
+  z-index: 0;
 }
 
 .message-display {

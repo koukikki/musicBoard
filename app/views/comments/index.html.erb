@@ -1,11 +1,11 @@
 <div class="wrapper">
-<div class="new_bar">
-  <p>コメント投稿</p>
-</div>
-<%= render partial: 'room' %>
-<%= render partial: 'comment' %>
-<div class="comment_body">
-<%= render partial: 'message', locals: { comments: @comments} %>
-</div>
+  <div class="new_bar">
+    <p>コメント投稿</p>
+  </div>
+  <%= render partial: 'room' %>
+  <%= render partial: 'comment' %>
+  <div class="comment_body">
+    <%= render partial: 'message', locals: { comments: @comments} %>
+  </div>
 </div>
 
