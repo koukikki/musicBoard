@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-ul, li {
-  text-decoration: none;
-}
-
 html {
   height: 100%;
 }
