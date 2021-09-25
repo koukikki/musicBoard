@@ -38,8 +38,6 @@ body {
   width: 27%;
 }
 
-
-
 .nav__btn {
   display: inline-block;
   text-decoration: none;
@@ -125,7 +123,7 @@ body {
 .search_bar {
   display: flex;
   height: 50px;
-  background-color: lightskyblue;
+  background-color: rgb(247, 174, 126);
 }
 
 .index_bar {
@@ -155,7 +153,7 @@ body {
 }
 
 .form-submit {
-  background-color: #38AEF0;
+  background-color: #ec930e;
   border: none;
   color: white;
   font-size: 16px;
@@ -203,7 +201,7 @@ body {
   display: flex;
   height: 50px;
   width: 100vw;
-  background-color: lightskyblue;
+  background-color: rgb(247, 174, 126);
   position: fixed;
   bottom: 0;
 }
@@ -224,7 +222,7 @@ body {
 
 .comment-submit {
   text-decoration: none;
-  background-color: #38AEF0;
+  background-color: #ec930e;
   border: none;
   color: white;
   font-size: 16px;
@@ -255,6 +253,10 @@ body {
 
 .message-user {
   padding-right: 10px;
+}
+
+.user-name {
+  color: #333333;
 }
 
 .lower-message {
@@ -296,3 +298,145 @@ body {
   display: none;
 }
 
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .index_bar {
+    font-size: 15px;
+  }
+
+  .main_logo {
+    width: 50%;
+  }
+
+  .main_header {
+    padding: 0 20px;
+  }
+
+  .nav__btn {
+    padding: 6px;
+  }
+  
+  .post {
+    min-width: 40vw;
+  }
+
+  .comment-word {
+    min-width: 60vw;
+  }
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .wrapper {
+    background-size: auto;
+  }
+
+  .index_bar {
+    font-size: 10px;
+  }
+
+  .search_bar {
+    height: 30px;
+  }
+
+  .form-keyword {
+    font-size: 10px;
+    width: 55vw;
+    height: 18px;
+    margin: 0 10px 5px 10px;
+  }
+  
+  .form-submit {
+    font-size: 9px;
+    height: 18px;
+    min-width: 3vw;
+    margin: 0 5px;
+  }
+
+  .main_header {
+    height: 30px;
+  }
+  
+  .main_header {
+    background-color: gray;
+    padding: 0 10px 5px 10px;
+  }
+  
+  .main_logo {
+    width: 60%;
+    padding-top: 10px;
+  }
+  
+  .nav__btn {
+    font-size: 8px;
+    padding: 2px;
+    margin: 0 3px;
+  }
+
+  li {
+    font-size: 8px;
+  }
+
+  .user_name {
+    padding: 8px;
+    min-width: 10vw;
+  }
+  
+  .user__name {
+    font-size: 9px;
+  }
+
+  .post {
+    background-color: grey;
+    min-width: 90vw;
+    padding: 3px 5px;
+    margin: 7px 15px;
+    opacity: 0.9;
+    font-size: 8px;
+  }
+
+  .new_bar {
+    height: 20px;
+    font-size: 13px;
+  }
+
+  .show_bar {
+    height: 20px;
+    font-size: 13px;
+  }
+  
+  .comment_room {
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  .end_btn {
+    padding-top: 4px;
+    height: 25px;
+    font-size: 9px;
+  }
+  
+  .comment__bar {
+    height: 30px;
+  }
+  
+  .comment-word {
+    font-size: 10px;
+    width: 55vw;
+    height: 18px;
+    margin: 0 10px 5px 10px;
+  }
+  
+  .comment-submit {
+    font-size: 9px;
+    height: 18px;
+    min-width: 3vw;
+    margin: 0 5px;
+  }
+  
+  .message-display {
+    margin: 10px 8px 10px 8px;
+    height: 45px;
+    font-size: 10px;
+  }
+}
