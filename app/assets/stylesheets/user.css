@@ -1,9 +1,12 @@
+body {background-color: #4d4949;}
+
 .inner{
   text-align: center;
 }
 
 .page-heading {
   font-size: 25px;
+  margin-top: 15px;
 }
 
 .form__wrapper {

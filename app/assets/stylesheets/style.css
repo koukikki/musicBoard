@@ -20,20 +20,28 @@ body {
 .main_header {
   width: 100vw;
   height: 60px;
-  background-color: gray;
-  padding: 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.main_title a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: large;
+.main_title {
+  width: 40vw;
 }
 
-.main_btn a {
+.main_header {
+  background-color: gray;
+  padding: 0 80px;
+}
+
+.main_logo {
+  width: 27%;
+}
+
+
+
+.nav__btn {
+  display: inline-block;
   text-decoration: none;
   padding: 10px;
   border: 1px solid #ffffff;
@@ -53,8 +61,8 @@ body {
 
 .user__name {
   text-decoration: none;
-  color: #333333;
-  border-bottom: 1px solid #333333;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .user__name:hover {
@@ -169,7 +177,7 @@ body {
 
 .comment_room {
   min-width: 70vw;
-  padding: 5px 5px;
+  padding: 5px;
 }
 
 .comment_post {
@@ -281,6 +289,7 @@ body {
 
 .fa-book {
   margin-right: 3px;
+  color: #127232;
 }
 
 .hidden{
