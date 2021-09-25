@@ -240,6 +240,7 @@ body {
 
 .comment_body {
   background-color: gray;
+  overflow-y:scroll;
   z-index: 0;
 }
 
