@@ -239,7 +239,7 @@ body {
 }
 
 .comment_body {
-  background-color: gray;
+  background-image: url(record.png);
   overflow-y:scroll;
   z-index: 0;
 }
