@@ -42,7 +42,7 @@ class RoomsController < ApplicationController
   end
 
   def search
-    @rooms = Room.search(params[:keyword])
+    @rooms = Room.search(params[:keyword]).order('created_at DESC')
     @keyword = params[:keyword]
   end
 

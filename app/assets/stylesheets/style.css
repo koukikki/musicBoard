@@ -19,7 +19,7 @@ body {
 /* ヘッダー */
 .main_header {
   width: 100vw;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,12 +30,12 @@ body {
 }
 
 .main_header {
-  background-color: gray;
-  padding: 0 60px;
+  background-color: lightgray;
+  padding: 0 40px;
 }
 
 .main_logo {
-  width: 40%;
+  width: 60%;
 }
 
 .nav__btn {
