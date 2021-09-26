@@ -358,7 +358,7 @@ body {
   }
 
   .main_header {
-    height: 30px;
+    height: 40px;
   }
   
   .main_header {
@@ -442,4 +442,5 @@ body {
     height: 45px;
     font-size: 10px;
   }
+  
 }
