@@ -67,6 +67,11 @@ body {
   opacity: 0.7;
 }
 
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* 投稿・編集機能周り */
 
 .room {
@@ -296,6 +301,10 @@ body {
 .fa-book {
   margin-right: 3px;
   color: #127232;
+}
+
+.guide_btn {
+  padding-right: 5px;
 }
 
 .hidden{
