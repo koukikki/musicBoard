@@ -4,7 +4,7 @@
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
 
-window.addEventListener('load', function(){
+window.addEventListener("turbolinks:load", function(){
 
   const guideButton = document.getElementById("guide")
   const text = document.getElementById("text")
