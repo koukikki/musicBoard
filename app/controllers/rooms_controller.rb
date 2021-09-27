@@ -21,12 +21,10 @@ class RoomsController < ApplicationController
 
   def edit
     redirect_root
-    @room = Room.find(params[:id])
   end
 
   def update
     redirect_root
-    @room = Room.find(params[:id])
     @room.update(room_params)
     if @room.save
       redirect_to root_path
